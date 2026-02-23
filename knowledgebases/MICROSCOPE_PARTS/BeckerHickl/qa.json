@@ -1,0 +1,14 @@
+[
+    {
+        "q": "I could not see the signal and no excitation laser on the Flim system on the A1SP microscope.",
+        "a": "Check that you have turned on the correct pulsed laser control unit that is to the left of the A1SP microscope."
+    },
+    {
+        "q": "How can I image more than 3 or 4 fluorophores?",
+        "a": "To image four or more colors, we recommend consulting an LMF staff member to ensure minimal to no bleed-through. In general, you want to image your furthest red color first and your bluest color last to minimize photobleaching. Almost all our microscopes can easily image 4 fluorescent colors plus a transmitted channel. Some can do 5 easily or more using spectral imaging, fluorescence lifetime imaging, or special filter sets. Ask staff for more information on these options."
+    },
+    {
+        "q": "Which microscope or channel should I use to image a certain fluorophore?",
+        "a": "It's almost always possible to visualize any fluorophore from blue to near-infrared, even without the perfect filter set. All our microscopes are equipped with basic filter sets for common fluorophores (blue, green, red, far-red). Some have specific lasers/filters for CFP, YFP, and Cy7. Additionally, our A1SP spectral detector microscope and our AXR microscope can distinguish closely grouped fluorophores, and our FLIM system can even discern two different green fluorophores like FITC and GFP."
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "q": "What computer and server resources are available for users to perform image analysis, make image analysis pipelines, and do quantitative analysis in batch mode?",
+        "a": "There is as image analysis server called the Hive. It is accessible via a remote desktop interface and can handle up to 16 concurrent users. It has 2.0 terabytes of RAM and five high-end GPU cards. It has various open- and closed-source image analysis packages preinstalled for your use. If there is software that you need, please reach out to Jim Chambers to discuss.  To use this, you can request access to the Hive from LMF staff. On the Hive you will find Nikon Elements Analysis packages including General Analysis 3 (GA3), deconvolution, as well as the ability to train your own AI to use for segmentation, image clean up, etc. in your analysis pipeline. You can run your analysis pipeline in batch mode so it works on its own while you do more important work."
+    },
+    {
+        "q": "How do I use the Hive and Nikon Elements?",
+        "a": "Firstly, make and begin your Corum reservation if using NIS Elements. We have multiple licenses for Elements, each with GA3, AI, deconvolution, etc. All of them are equivalent and on the same machine and all are listed on Corum for you to reserve. To use non-Nikon software like open source software, there is no need for Corum reservation for now. Then Connect to the Hive. For NIS Elements, on first you will get a low disk space error. - Type the letter Q - At the bottom of the General tab, change the Temp folder to E:Temp - If you do not do this, Elements will crash- If you don not have it already, install Microsoft Remote Desktop client software on your Mac or PC. - Note that we now offer in-person terminals to access the Hive on a big screen. - Add a new PC connection and use this address: LMF-HIVE.CAMPUS.ADS.UMASS.EDU - Connect to the Hive remote computer by logging in with your UMass credentials - To connect from off-campus, you will need to install and use the UMass IT VPN. Use the analysis software of your choice - Select the software you need for your work. If missing, let LMF staff know, and we will install. - Data can be ***temporarily*** stored on the data drive E in Hive-User-Projects and make a subfolder with your advisors last name. - Data will be removed in a first-in, first-out scheme.**** **(i.e. do not plan on finding your data here in 2 years)** - **This is just for active data.** - Make judicious use of the IALS-Core-Shared folder for data storage and movement.) Moving data to/from the Y-drive - To connect to the Y-Drive server from a Mac, go to finder, then Go, then Connect to Server and type smb colon slash slash 172.19.83.114 in the box. Then enter your credentials. - To connect to the server from a PC, go to file manager, then type \\172.19.83.114 in the top path bar. Then enter your credentials."
+    },
+    {
+        "q": "How can I run batch analysis using GA3 in Nikon Elements?",
+        "a": "To run GA3 in batch and get your results in a nice table, you need to add Load and Concatenate Results after you have accumulated your records in a nicely formatted table. This will add a filename column when you run the batch so you will know which file was the source for each group of data."
+    },
+    {
+        "q": "Issues with Nikon Elements software on a microscope PC saying another instance is running.",
+        "a": "If you run Nikon NIS-Elements and you receive a warning saying that another instance of the application is running, it simply means another user didn't close out correctly. If this is happening on any of our microscope computers, the easiest and quickest way to fix it is to simply restart the computer to bump the other user off and reset the software license. Once it reboots, everything should work well."
+    },
+    {
+        "q": "Issues with Nikon Elements software on the HIVE image analysis server saying another instance is running.",
+        "a": "Be sure you are launching NIS Elements from the LMF folder on the desktop and not double-clicking an nd2 file.  Alternatively, another user might be running behind and using up a license. If this is the case, check Corum to see who it might be and send them a chat message on Microsoft Teams. If this occurs during business hours, feel free to reach out to LMF staff."
+    },
+    {
+        "q": "If you get a hardware error message like camera not found or something else not found when your run Nikon Elements (not the A1 simulator error).",
+        "a": "If you are getting an error message about hardware loading failing, it is ok. This is most frequently caused by something not being turned on in the system, or something being turned on in the incorrect order. First, check that all numbers for the microscope setup have been turned on. If something is off, turn it on, then restart Nikon NIS Elements and see if the problem persists. If there are still issues, turn off the setup completely and start from the beginning, making sure to leave ten seconds in between turning each numbered switch on."
+    },
+    {
+        "q": "I can't get a live image to show up on Nikon Elements screen when I start imaging.",
+        "a": "If you can see your sample correctly through the eyepiece but you don't see anything on the screen here are a few things to check. Did you click the Nikon A1/AX or camera light-path tab to switch to the camera or confocal setting? Did you click an OC (optical configuration, they are the buttons on each tab)? For the scanning confocal microscopes, if you see a red button that says, remove interlock, click it. This should remove the interlock that is blocking the light. This is a common pitfall on the A1R25 and A1RMP. Is the sample in focus and directly under or above the sample? Go back to the eyepiece setting and double-check as it could have moved or might be off-center. For A1RMP, is the knob next to the eyepiece on F? Is the shutter at O (open) setting? Is the filter position at 1 (empty)? Did you wait long enough for the lasers to warm up? If you see lights blinking on the large box, the lasers are still warming up so just give them a few more minutes."
+    },
+    {
+        "q": "I am getting an error about the Crest camera (Prime 95b) when you launch Nikon Elements.",
+        "a": "If you are getting an error about the Crest camera, it usually means that the camera might not have connected correctly. Please shut down the PC (wait till lights on PC turn off), turn off camera, then turn camera back on and wait for blinking on back to stop. Finally, start the PC. That should do it! You should not have to restart any other devices to solve this issue."
+    },
+    {
+        "q": "I can't see anything through the eyepiece when I look.  It is dark.",
+        "a": "Here are things to check when you can't see through the eyepiece: 1.  Are you on the eyepiece tab in the Nikon NIS Elements program? The eyepiece tab needs to be selected to see light through the eyepiece. 2.  Did you select an OC (optical configuration)? You need to select an OC (the buttons that are labeled green, BF, TRITC, red, or FITC or other things like that in the eyepiece tab). 3.  When the correct tab and OC are selected, does the correct button (labeled eye) on the front of the microscope turn light up in green. If not, press the button manually, then right-click on the OC and click assign current microscope setting. 4.  Is there an objective under your sample? If not, select one by clicking the icon on the left side of the screen. 5.  Is your sample directly above the objective? 6.  Is your sample in focus? You might not see anything until you are close to the focal point. 7.  Did you turn everything on in the correct order? If not, turn off all devices and turn them back on in the correct order. 8.  For A1R25, is the small pad (switch number 5) turned on? Try pressing the buttons to turn up the light intensity. V- violet (blue), GR- green, R- red. 9.  For A1RMP, the knob on the right side of the eyepiece needs to be on BINO and the shutter above the objective needs to be on the O (open) configuration. Also, make sure to turn on the light. Press the white button on the table for BF and step on the footswitch for fluorescence. For fluorescence, you also need to turn the wheel to the correct position (2 is blue, 3 is green, and 4 is red) that is not 1."
+    },
+    {
+        "q": "Elements or acquisition software seems to be running slow.  The PC seems very slow.",
+        "a": "If the software is frozen or running extremely slow, you should close the software and reboot the PC. Leave the hardware all turned on during this. Once the PC is back up and you are logged in, check the C-drive to be sure it is not full. If it is, please message core staff. The reboot usually frees up RAM resources and solves the issue."
+    },
+    {
+        "q": "Does anyone know how to save the Maximum intensity projection images as a tiff? I save the image but it does not save as the MIP.",
+        "a": "When you view it, you are right - it saves as a regular z-stack. To create a maximum intensity projection for saving, go to ND Processing under Image, then find create max intensity projection and save that result."
+    },
+    {
+        "q": "I am on the Crest and when I run Elements it says it can not open camera device Prime 95B.",
+        "a": "To solve this, do windows shut down then wait for PC lights to turn off fully. Next, then turn off camera if it is on, then turn camera back on and wait about 2 minutes, then turn PC back on and launch software again."
+    },
+    {
+        "q": "How do I figure out the pixel size for images that I collected in the Light Microscopy Facility.",
+        "a": "Almost always, the pixel size is listed in the image file. It is part of the metadata that can be viewed with Nikon Elements and other software like Fiji. Look for the image properties tab and find the word calibration."
+    },
+    {
+        "q": "Does anyone know if there is a way to copy a portion of a GA3 recipe from one into another?",
+        "a": "There isn't an easy way to copy a part of one recipe to another, but you can make a shared function by grouping part of a recipe and then call that function in other GA3 recipes."
+    },
+    {
+        "q": "I am having trouble with Nikon Elements crashing when I am analyzing images using the HIVE server.",
+        "a": "Sorry to hear that. Often the cause of this crashing is that you might not have set your temporary directory in the settings. To do this, double click on the top bar of Elements and then at the bottom of the General tab, change the Temp folder to the subdirectory called Temp that you can find in the E-drive."
+    },
+    {
+        "q": "Questions about Photoactivation, Photobleaching, FRAP, FLIP experiments",
+        "a": "Any of our Nikon A1 confocal microscopes or our Nikon AX confocal microscopes can easily perform photobleaching (FRAP) experiments or photoactivation (PA). Additionally, our X1 spinning disc microscope can do the same and is generally better for live cells or fast-moving fluorophores. To perform a FRAP or PA experiment, in Nikon Elements software you choose a small region using the region of interest (ROI) editor to photo-bleach or a line or a point or any shape you desire, set it as a stimulation ROI and then use the stimulation module. You can do repetitive stimulations using ND stimulation module or other ND modules in the software. These can be found by right-clicking on a blank part of the background of Elements and finding analysis controls."
+    },
+    {
+        "q": "I am getting a connection or simulation error on the scanning confocal microscopes",
+        "a": "If you are getting an A1 Simulator or simulation error, the reason is that things were either not shutdown correctly or were started incorrectly. Here is what I need you to do: Close the Nikon software if it is open. Find the large Nikon box next to the microscope table (this is not the Nikon box with the lasers). Look for a square push button power switch on the left side of the box for the A1 confocal microscopes and a large circle button at the front for the AX confocal microscopes. When you find it, click it to turn off that box. Wait 15 to 30 seconds, push button on box to power it up. Wait for the lights to stabilize and then run NIS Elements. This should solve the error. If this does not solve the error, shut everything off in order (high number to low, with 10 seconds in between) and restart all devices and NIS Elements."
+    },
+    {
+        "q": "How can I change the displayed color of my image or channels?",
+        "a": "In Elements software, you can change the color for old data or for future data. - For old data: Right-click on the image channel tab at the bottom of the image, choose Properties, and then set your desired color. - For future data on a confocal: Click Detector, then click the desired channel color. - For future data on other microscopes: Right-click on the optical configuration button, click Edit, and then find the color you like."
+    },
+    {
+        "q": "What should I do if I need starter optical configurations or lost my settings?",
+        "a": "To import starter settings in Nikon Elements, go to Calibration -> Optical Configurations and click Import. Find the most recent XML file in the data drive. You can also import settings from old data by opening an ND2 file, right-clicking the image, choosing reuse camera settings, and then reuse device settings. Click add in the top right to save it as a new configuration (be sure to un-check the objective in the pop-up window)."
+    },
+    {
+        "q": "How can I use the mouse to control focus and the Z-axis?",
+        "a": "In Nikon Elements, go to the Devices menu, find Mouse Joystick Setup, and choose Ti (or Ti2) Z-drive. Then, go to Devices again and click Enable Mouse Joystick. To control the XY stage movement with the mouse, click the compass-like icon at the top of a Live image window. Note that these controls only work when an image is live and not frozen."
+    },
+    {
+        "q": "How can I view my data on my own computer or laptop?",
+        "a": "Most microscope image files (like .ND2) are not readable by standard computer image viewers. We recommend two free solutions:  1.  Fiji: A distribution of ImageJ that includes the Bio-Formats plugin, which can read most proprietary microscopy image formats.  2.  Nikon NIS-Elements Viewer: A free standalone program that lets you view .ND2 files with the same look and feel as the full software, just without the advanced analysis features."
+    },
+    {
+        "q": "Is there a checklist to get me started on the microscope?",
+        "a": "Yes! If it's been a while since your training, you can use this checklist. Also, check the Files tab in the General channel on Microsoft Teams or contact staff. New User Checklist: 1.  Turn devices on in the correct order (wait 10 seconds between each). 2.  Log in with your UMass credentials. 3.  Start NIS Elements. 4.  Select the correct objective. Use oil if the objective is marked oil. 5.  For eyepiece viewing, click the Eyepiece tab and select an Optical Configuration (OC). 6.  Focus on the sample using the side knob. 7.  Switch to the confocal tab (e.g., A1) and select an OC. 8.  Click the play button to see a live image. 9.  Use the histogram to adjust exposure/laser/gain. Avoid saturation. Right-click the red exclamation mark on the OC and select assign current settings to save changes. 10. Adjust contrast by moving the line on the Look-Up Table (LUTs). 11. Click the camera icon to take a picture. 12. Use the ND acquisition tab for z-stacks, large images, time-series, or multipoint imaging. 13. When done, lower the objective to its minimum Z position. 14. Restart the computer and stop your reservation on Corum."
+    },
+    {
+        "q": "When booting up Elements on CREST do I select Prime 95B or Dual Zyla?",
+        "a": "Select Prime 95B.  As of 2026, the dual zyla path is obsolete."
+    },
+    {
+        "q": "NIS-Elements AR acquisition will not let me save files to any of my Y drive folders.",
+        "a": "This sometimes happens.  If a PC reboot doesn't help, you can turn off the \"save to file\" option on ND acquisition and simply collect the data and then save it after it is collected."
+    }
+]

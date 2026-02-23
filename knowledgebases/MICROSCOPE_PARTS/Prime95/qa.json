@@ -1,0 +1,14 @@
+[
+    {
+        "q": "I am getting an error about the Crest camera (Prime 95b) when you launch Nikon Elements.",
+        "a": "If you are getting an error about the Crest camera, it usually means that the camera might not have connected correctly. Please shut down the PC (wait till lights on PC turn off), turn off camera, then turn camera back on and wait for blinking on back to stop. Finally, start the PC. That should do it! You should not have to restart any other devices to solve this issue."
+    },
+    {
+        "q": "I am on the Crest and when I run Elements it says it can not open camera device Prime 95B.",
+        "a": "To solve this, do windows shut down then wait for PC lights to turn off fully. Next, then turn off camera if it is on, then turn camera back on and wait about 2 minutes, then turn PC back on and launch software again."
+    },
+    {
+        "q": "When booting up Elements on CREST do I select Prime 95B or Dual Zyla?",
+        "a": "Select Prime 95B.  As of 2026, the dual zyla path is obsolete."
+    }
+]
