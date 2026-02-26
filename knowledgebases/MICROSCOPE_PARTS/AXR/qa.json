@@ -1,6 +1,0 @@
-[
-    {
-        "q": "Which microscope or channel should I use to image a certain fluorophore?",
-        "a": "It's almost always possible to visualize any fluorophore from blue to near-infrared, even without the perfect filter set. All our microscopes are equipped with basic filter sets for common fluorophores (blue, green, red, far-red). Some have specific lasers/filters for CFP, YFP, and Cy7. Additionally, our A1SP spectral detector microscope and our AXR microscope can distinguish closely grouped fluorophores, and our FLIM system can even discern two different green fluorophores like FITC and GFP."
-    }
-]

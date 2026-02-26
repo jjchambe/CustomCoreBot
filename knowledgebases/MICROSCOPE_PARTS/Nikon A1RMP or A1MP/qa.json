@@ -1,0 +1,10 @@
+[
+    {
+        "q": "I can't get a live image to show up on Nikon Elements screen when I start imaging.",
+        "a": "If you can see your sample correctly through the eyepiece but you don't see anything on the screen here are a few things to check. Did you click the Nikon A1 or camera light-path tab to switch to the camera or confocal setting? Did you click an OC (optical configuration, they are the buttons on each tab)? For the scanning confocal microscopes, if you see a red button that says, remove interlock, click it. This should remove the interlock that is blocking the light. Is the sample in focus and directly under or above the sample? Go back to the eyepiece setting and double-check as it could have moved or might be off-center.  Is the shutter at O (open) setting? Is the filter position at the empty position? Did you wait long enough for the lasers to warm up?"
+    },
+    {
+        "q": "I can't see anything through the eyepiece when I look.  It is dark.",
+        "a": "Here are things to check when you can't see through the eyepiece: 1.  Are you on the eyepiece tab in the Nikon NIS Elements program? The eyepiece tab needs to be selected to see light through the eyepiece. 2.  Did you select an OC (optical configuration)? You need to select an OC (the buttons that are labeled green, BF, TRITC, red, or FITC or other things like that in the eyepiece tab). 3.  When the correct tab and OC are selected, does the correct button (labeled eye) on the front of the microscope turn light up in green. If not, press the button manually, then right-click on the OC and click assign current microscope setting. 4.  Is there an objective under your sample? If not, select one by clicking the icon on the left side of the screen. 5.  Is your sample directly above the objective? 6.  Is your sample in focus? You might not see anything until you are close to the focal point. 7.  Did you turn everything on in the correct order? If not, turn off all devices and turn them back on in the correct order."
+    }
+]
