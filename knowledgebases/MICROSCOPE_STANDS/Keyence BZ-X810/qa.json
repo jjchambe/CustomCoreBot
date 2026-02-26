@@ -1,0 +1,14 @@
+[
+    {
+        "q": "I am using the Keyence microscope and when I try to run the Keyence Viewer software, I get a pop-up that says Already running.",
+        "a": "Thanks for your question. To solve this problem, you will just need to restart the PC. This will end the disconnected session and start fresh."
+    },
+    {
+        "q": "How can I figure out the pixel calibration or size for imaging I acquired on the Keyence microscope?",
+        "a": "Tiff files saved with Keyence software/analyzer have metadata that is not compatible with Fiji or Image-J. If you use the default calibration on the tiff files for your scale bars, it will not be calibrated correctly. To display an accurate scale bar, you will need to manually enter the right resolution in Fiji. To do this; 1. Find the resolution info on the Keyence analyzer. It is under Insert then scale then calibration settings  2. Then in Fiji, do image then properties or go to analyze then set scale and enter the number you got from step 1."
+    },
+    {
+        "q": "Can I get confocal images of my color-stained sample with transmitted light?",
+        "a": "Unfortunately, no. Confocal imaging is only for fluorescent samples and does not work with bright-field settings. However, you can still perform a z-stack with bright-field to get a 3D image on almost all our microscopes, though the resolution will not be the same as a true confocal image. If you have a sample with a non-fluorescence-colored stain, the Keyence microscope is your easiest option."
+    }
+]

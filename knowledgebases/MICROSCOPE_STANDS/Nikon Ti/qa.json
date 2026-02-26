@@ -1,0 +1,18 @@
+[
+    {
+        "q": "The focus position or Z-position is not matching when running z-stack experiment or something seems like it isn't responding to the right z-value.",
+        "a": "Go to the Devices menu bar on top and be sure you have the right z-device selected under z-device. Typically, you want this to be set to TI Drive. Make sure this same device is selected in the Z-stack setup experiment."
+    },
+    {
+        "q": "The focus knob indicator number or the Z-position value is not changing when using physical focus knobs.  I can't get the objective to move up or down.",
+        "a": "If you can't change the z-value using the focus knobs or you can't move the lens up or down, it probably means the escape button was pressed by the last user. Look on the right side of the microscope click and hold escape button. While holding that button press refocus. This will release the lock safely."
+    },
+    {
+        "q": "The stage seems to be not moving very fast or is not moving at all when I use the joystick.",
+        "a": "If the joystick seems to not be moving and yet the lights are on the joystick, it is probably set to move excruciatingly slow. If you are on a Nikon TI (tan microscope body), the joystick speed can be changed for xy movement by twisting the joystick stick. Watch the orange light."
+    },
+    {
+        "q": "What should I do if I'm having issues getting good brightfield, transmitted, phase contrast, or DIC images?",
+        "a": "If you are having trouble with Kohler illumination, first, move to a low magnification objective like 10x and focus using the eyepiece. While looking through the eyepiece, close the top diaphragm slowly until you see the iris leaves or dimming. Focus the condenser lens up and down until the dark/bright contrast is sharp. Center the spotlight using the two thumbscrews on the front of the condenser, then open the top iris until your field of view is just filled. Then you can move to a higher magnification."
+    }
+]
