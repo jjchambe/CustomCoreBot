@@ -1,26 +1,2 @@
 [
-    {
-        "q": "I am getting an error about the Crest camera (Prime 95b) when you launch Nikon Elements.",
-        "a": "If you are getting an error about the Crest camera, it usually means that the camera might not have connected correctly. Please shut down the PC (wait till lights on PC turn off), turn off camera, then turn camera back on and wait for blinking on back to stop. Finally, start the PC. That should do it! You should not have to restart any other devices to solve this issue."
-    },
-    {
-        "q": "I have an error with Windows at boot up on the Crest system.",
-        "a": "If you see an error before windows even boots up, please follow the instructions on the screen. You may need to fully shut down the PC and restart. If you are using the Crest microscope, be sure to turn on the camera first and wait for about 2 minutes until there are no blinking lights at the back of the camera. Then start PC, laser box key, and Crest device and you should then be ready to image on the Crest microscope."
-    },
-    {
-        "q": "I just started up the Crest and I have a POST error saying fatal PCI error.",
-        "a": "That is a common error that usually occurs when the PC is turned on before the camera is fully on. It makes the computer crash. Try to restart the procedure of turning on the microscope. Make sure you start with the computer off as the first step and then proceed with the rest of the steps, waiting about 2 minutes after you turn the camera on before powering up the PC."
-    },
-    {
-        "q": "I am on the Crest and when I run Elements it says it can not open camera device Prime 95B.",
-        "a": "To solve this, do windows shut down then wait for PC lights to turn off fully. Next, then turn off camera if it is on, then turn camera back on and wait about 2 minutes, then turn PC back on and launch software again."
-    },
-    {
-        "q": "Questions about Photoactivation, Photobleaching, FRAP, FLIP experiments",
-        "a": "Any of our Nikon A1 confocal microscopes or our Nikon AX confocal microscopes can easily perform photobleaching (FRAP) experiments or photoactivation (PA). Additionally, our X1 spinning disc microscope can do the same and is generally better for live cells or fast-moving fluorophores. To perform a FRAP or PA experiment, in Nikon Elements software you choose a small region using the region of interest (ROI) editor to photo-bleach or a line or a point or any shape you desire, set it as a stimulation ROI and then use the stimulation module. You can do repetitive stimulations using ND stimulation module or other ND modules in the software. These can be found by right-clicking on a blank part of the background of Elements and finding analysis controls."
-    },
-    {
-        "q": "What is the difference between WF and SD on the CREST?",
-        "a": "WF means widefield which is a non-confocal mode.  It is generally way faster and uses less light.  But, you do not get great 3D data.  SD is the spinning disk confocal mode.  It generally is slower and needs higher light power.  But you get 3-dimensional data from your images, especially if you couple it with z-stacks."
-    }
 ]
