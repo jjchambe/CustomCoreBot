@@ -1,5 +1,9 @@
 [
     {
+        "q": "I'm getting an error message saying camera not found when I run Nikon Elements (not the A1 simulator error).",
+        "a": "If you are getting an error message about hardware loading failing, it is ok. This is most frequently caused by something not being turned on in the system, or something being turned on in the incorrect order.  If something is off, turn it on, then restart the software and see if the problem persists. If there are still issues, turn off the setup completely and start from the beginning, making sure to leave ten seconds in between turning each numbered switch on."
+    },
+    {
         "q": "When booting up Elements on CREST do I select Prime 95B or Dual Zyla?",
         "a": "Select Prime 95B.  As of 2026, the dual zyla path is obsolete."
     }

@@ -1,7 +1,7 @@
 [
     {
-        "q": "I could not see the signal and no excitation laser on the Flim system on the A1SP microscope.",
-        "a": "Check that you have turned on the correct pulsed laser control unit that is to the left of the A1SP microscope."
+        "q": "I could not see the signal and no excitation laser on the Flim system on the microscope.",
+        "a": "Check that you have turned on the correct pulsed laser control unit that is to the left of the microscope."
     },
     {
         "q": "How can I image more than 3 or 4 fluorophores?",

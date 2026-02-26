@@ -1,35 +1,27 @@
 [
     {
-        "q": "If you get a hardware error message like camera not found or something else not found when your run Nikon Elements (not the A1 simulator error).",
-        "a": "If you are getting an error message about hardware loading failing, it is ok. This is most frequently caused by something not being turned on in the system, or something being turned on in the incorrect order. First, check that all numbers for the microscope setup have been turned on. If something is off, turn it on, then restart Nikon NIS Elements and see if the problem persists. If there are still issues, turn off the setup completely and start from the beginning, making sure to leave ten seconds in between turning each numbered switch on."
-    },
-    {
         "q": "I can't get a live image to show up on Nikon Elements screen when I start imaging.",
-        "a": "If you can see your sample correctly through the eyepiece but you don't see anything on the screen here are a few things to check. Did you click the Nikon A1/AX or camera light-path tab to switch to the camera or confocal setting? Did you click an OC (optical configuration, they are the buttons on each tab)? For the scanning confocal microscopes, if you see a red button that says, remove interlock, click it. This should remove the interlock that is blocking the light. This is a common pitfall on the A1R25 and A1RMP. Is the sample in focus and directly under or above the sample? Go back to the eyepiece setting and double-check as it could have moved or might be off-center. For A1RMP, is the knob next to the eyepiece on F? Is the shutter at O (open) setting? Is the filter position at 1 (empty)? Did you wait long enough for the lasers to warm up? If you see lights blinking on the large box, the lasers are still warming up so just give them a few more minutes."
+        "a": "If you can see your sample correctly through the eyepiece but you don't see anything on the screen here are a few things to check. Did you click the Nikon A1 tab to switch to the camera or confocal setting? Did you click an OC (optical configuration, they are the buttons on each tab)?  If you see a red button that says, remove interlock, click it. This should remove the interlock that is blocking the light.  Is the sample in focus and directly under or above the sample?  If you aren't sure, go back to the eyepiece setting and double-check as it could have moved or might be off-center."
     },
     {
-        "q": "I could not see the signal and no excitation laser on the Flim system on the A1SP microscope.",
-        "a": "Check that you have turned on the correct pulsed laser control unit that is to the left of the A1SP microscope."
-    },
-    {
-        "q": "Questions about Photoactivation, Photobleaching, FRAP, FLIP experiments",
-        "a": "Any of our Nikon A1 confocal microscopes or our Nikon AX confocal microscopes can easily perform photobleaching (FRAP) experiments or photoactivation (PA). Additionally, our X1 spinning disc microscope can do the same and is generally better for live cells or fast-moving fluorophores. To perform a FRAP or PA experiment, in Nikon Elements software you choose a small region using the region of interest (ROI) editor to photo-bleach or a line or a point or any shape you desire, set it as a stimulation ROI and then use the stimulation module. You can do repetitive stimulations using ND stimulation module or other ND modules in the software. These can be found by right-clicking on a blank part of the background of Elements and finding analysis controls."
+        "q": "I have questions about Photoactivation, Photobleaching, FRAP, FLIP experiments",
+        "a": "Any Nikon A1 confocal microscopes can easily perform photobleaching (FRAP) experiments or photoactivation (PA).  To perform a FRAP or PA experiment, in Nikon Elements software you choose a small region using the region of interest (ROI) editor to photo-bleach or a line or a point or any shape you desire, set it as a stimulation ROI and then use the stimulation module. You can do repetitive stimulations using ND stimulation module or other ND modules in the software. These can be found by right-clicking on a blank part of the background of Elements and finding analysis controls."
     },
     {
         "q": "I am getting a connection or simulation error on the scanning confocal microscopes",
-        "a": "If you are getting an A1 Simulator or simulation error, the reason is that things were either not shutdown correctly or were started incorrectly. Here is what I need you to do: Close the Nikon software if it is open. Find the large Nikon box next to the microscope table (this is not the Nikon box with the lasers). Look for a square push button power switch on the left side of the box for the A1 confocal microscopes and a large circle button at the front for the AX confocal microscopes. When you find it, click it to turn off that box. Wait 15 to 30 seconds, push button on box to power it up. Wait for the lights to stabilize and then run NIS Elements. This should solve the error. If this does not solve the error, shut everything off in order (high number to low, with 10 seconds in between) and restart all devices and NIS Elements."
+        "a": "If you are getting an A1 Simulator or simulation error, the likely reason is that things were either not shutdown correctly or were started incorrectly. Here is what I need you to do: Close the Nikon software if it is open. Find the large Nikon box next to the microscope table (this is not the Nikon box with the lasers). Look for a square push button power switch on the left side of the box for the A1 confocal microscopes.  When you find it, click it to turn off that box. Wait 15 to 30 seconds, push button on box to power it up. Wait for the lights to stabilize and then run NIS Elements. This should solve the error. If this does not solve the error, shut everything off in order (high number to low, with 10 seconds in between) and restart all devices and NIS Elements."
     },
     {
-        "q": "I want to gather optimal pixel size resolution pictures on a scanning confocal and use Nyquist imaging criteria.",
+        "q": "I want to gather optimal pixel size resolution images on a scanning confocal and use Nyquist imaging criteria.",
         "a": "The Nyquist criterion requires a sampling interval of about twice the highest spatial frequency of the specimen to accurately preserve the spatial resolution in the resulting image. If sampling occurs below that required by the Nyquist criterion, details with high spatial frequency will not be accurately represented in the final image. The Abbe limit of resolution for optical images is approximately 0.22 micrometers (using visible light), meaning that a digitizer must be capable of sampling at intervals that correspond in the specimen space to 0.11 micrometers or less. A digitizer that samples the specimen at 512 pixels per horizontal scan line would have to produce a maximum horizontal field of view of 56 micrometers (512 x 0.11 micrometers) to conform to the Nyquist criterion. An interval of 2.5 to 3 samples for the smallest resolvable feature is suggested to ensure adequate sampling for high resolution imaging"
     },
     {
-        "q": "If you see stripes on the screen when using a scanning confocal microscope",
+        "q": "I am seeing weird stripes on the screen when using an A1 scanning confocal microscope",
         "a": "If you see stripes on the screen, it probably means the scanning confocal control box needs to be reset. This is the simulator error that is quite common in a multi-user facility."
     },
     {
         "q": "Which microscope or channel should I use to image a certain fluorophore?",
-        "a": "It's almost always possible to visualize any fluorophore from blue to near-infrared, even without the perfect filter set. All our microscopes are equipped with basic filter sets for common fluorophores (blue, green, red, far-red). Some have specific lasers/filters for CFP, YFP, and Cy7. Additionally, our A1SP spectral detector microscope and our AXR microscope can distinguish closely grouped fluorophores, and our FLIM system can even discern two different green fluorophores like FITC and GFP."
+        "a": "It's almost always possible to visualize any fluorophore from blue to near-infrared, even without the perfect filter set. All our microscopes are equipped with basic filter sets for common fluorophores (blue, green, red, far-red). Some have specific lasers/filters for CFP, YFP, and Cy7."
     },
     {
         "q": "What does gain mean and what does it do?",
@@ -37,6 +29,6 @@
     },
     {
         "q": "How can I reorient or rotate my sample on the screen while imaging?",
-        "a": "On a scanning confocal, go to the Scan Area settings. You can shrink the green scan box slightly, then grab the green circle with your mouse and rotate it to the desired angle. Right-click to send the new settings to the hardware."
+        "a": "On an A1 scanning confocal, go to the Scan Area settings. You can shrink the green scan box slightly, then grab the green circle with your mouse and rotate it to the desired angle. Right-click to send the new settings to the hardware."
     }
 ]
