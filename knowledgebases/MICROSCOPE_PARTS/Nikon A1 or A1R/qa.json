@@ -34,5 +34,9 @@
     {
         "q": "How can I reorient or rotate my sample on the screen while imaging?",
         "a": "On an A1 scanning confocal, go to the Scan Area settings. You can shrink the green scan box slightly, then grab the green circle with your mouse and rotate it to the desired angle. Right-click to send the new settings to the hardware."
+    },
+    {
+        "q": "as",
+        "a": "as"
     }
 ]

@@ -2,5 +2,9 @@
     {
         "q": "What is the difference between SR and CF modes",
         "a": "SR mode makes use of the spatial array detector to give you sub-pixel reaolution.  CF mode (confocal) integrates the 25 components of that array as one big pixel."
+    },
+    {
+        "q": "dsf",
+        "a": "sf"
     }
 ]
