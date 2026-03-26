@@ -300,6 +300,76 @@ textarea {
   padding: 24px 0;
 }
 
+/* ── FAQ button (header) ─────────────────────────── */
+.btn-faq {
+  margin-left: auto;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 7px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .2s;
+}
+.btn-faq:hover { background: rgba(255,255,255,.22); }
+
+/* ── FAQ panel ───────────────────────────────────── */
+.faq-panel {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-header {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+
+.faq-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 4px;
+}
+
+.faq-subtitle {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+
+.faq-q {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 6px;
+}
+
+.faq-a {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+}
+
 .badge {
   font-size: 11px;
   font-weight: 600;

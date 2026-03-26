@@ -50,7 +50,7 @@ export default function QAForm({ categories, selectedCategory, selectedSub, onAd
     clearTimeout(undoTimer.current);
 
     try {
-      const res = await fetch(`/api/qa/${encodeURIComponent(cat)}/${encodeURIComponent(sub)}`, {
+      const res = await fetch(`${import.meta.env.BASE_URL}api/qa/${encodeURIComponent(cat)}/${encodeURIComponent(sub)}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ q, a }),
@@ -75,7 +75,7 @@ export default function QAForm({ categories, selectedCategory, selectedSub, onAd
     if (!undoInfo) return;
     clearTimeout(undoTimer.current);
     try {
-      const res = await fetch(`/api/qa/${encodeURIComponent(undoInfo.cat)}/${encodeURIComponent(undoInfo.sub)}`, {
+      const res = await fetch(`${import.meta.env.BASE_URL}api/qa/${encodeURIComponent(undoInfo.cat)}/${encodeURIComponent(undoInfo.sub)}`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ q: undoInfo.q, a: undoInfo.a }),
