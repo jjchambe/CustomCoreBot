@@ -113,8 +113,65 @@ function htmlPage(title, message, color) {
 </div></body></html>`;
 }
 
-// GET /api/review/:token/approve → write the pending change to disk
+function confirmPage(token, action, item) {
+  const isApprove = action === 'approve';
+  const btnColor = isApprove ? '#27ae60' : '#e74c3c';
+  const btnLabel = isApprove ? 'Yes, Approve' : 'Yes, Reject';
+  const title = isApprove ? 'Confirm Approval' : 'Confirm Rejection';
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>${title}</title>
+<style>
+  body { font-family: sans-serif; display: flex; align-items: center; justify-content: center;
+         min-height: 100vh; margin: 0; background: #f4f4f4; }
+  .box { background: #fff; border-radius: 8px; padding: 40px 48px; text-align: center;
+         box-shadow: 0 2px 12px rgba(0,0,0,.1); max-width: 520px; }
+  h2 { color: #333; margin-top: 0; }
+  .meta { background: #f9f9f9; border-radius: 6px; padding: 16px; text-align: left;
+          margin: 16px 0; font-size: 14px; color: #444; line-height: 1.6; }
+  .meta strong { color: #222; }
+  .actions { display: flex; gap: 12px; justify-content: center; margin-top: 24px; }
+  button { padding: 10px 28px; border: none; border-radius: 6px; font-size: 15px;
+           cursor: pointer; font-weight: 600; }
+  .btn-confirm { background: ${btnColor}; color: #fff; }
+  .btn-confirm:hover { opacity: 0.88; }
+  .btn-cancel { background: #eee; color: #555; }
+  .btn-cancel:hover { background: #ddd; }
+  a { color: #4a90e2; text-decoration: none; }
+</style></head><body>
+<div class="box">
+  <h2>${title}</h2>
+  <div class="meta">
+    <strong>Action:</strong> ${item.action}<br>
+    <strong>Category:</strong> ${item.category} › ${item.subcategory}<br>
+    <strong>Q:</strong> ${item.q}<br>
+    <strong>A:</strong> ${item.a}
+  </div>
+  <p style="color:#555">Are you sure you want to <strong>${action}</strong> this change?</p>
+  <div class="actions">
+    <form method="POST" action="/api/review/${token}/${action}">
+      <button class="btn-confirm" type="submit">${btnLabel}</button>
+    </form>
+    <a href="/corebot/"><button class="btn-cancel" type="button">Cancel</button></a>
+  </div>
+</div></body></html>`;
+}
+
+// GET /api/review/:token/approve → show confirmation page (safe for email link pre-fetching)
 app.get('/api/review/:token/approve', (req, res) => {
+  const pending = loadPending();
+  const item = pending[req.params.token];
+  if (!item) {
+    return res.status(410).send(htmlPage(
+      'Already Handled',
+      'This review link has already been used or has expired.',
+      '#e67e22'
+    ));
+  }
+  res.send(confirmPage(req.params.token, 'approve', item));
+});
+
+// POST /api/review/:token/approve → write the pending change to disk
+app.post('/api/review/:token/approve', (req, res) => {
   const pending = loadPending();
   const item = pending[req.params.token];
   if (!item) {
@@ -161,8 +218,22 @@ app.get('/api/review/:token/approve', (req, res) => {
   }
 });
 
-// GET /api/review/:token/reject → discard the pending change (nothing was written)
+// GET /api/review/:token/reject → show confirmation page (safe for email link pre-fetching)
 app.get('/api/review/:token/reject', (req, res) => {
+  const pending = loadPending();
+  const item = pending[req.params.token];
+  if (!item) {
+    return res.status(410).send(htmlPage(
+      'Already Handled',
+      'This review link has already been used or has expired.',
+      '#e67e22'
+    ));
+  }
+  res.send(confirmPage(req.params.token, 'reject', item));
+});
+
+// POST /api/review/:token/reject → discard the pending change (nothing was written)
+app.post('/api/review/:token/reject', (req, res) => {
   const pending = loadPending();
   const item = pending[req.params.token];
   if (!item) {
