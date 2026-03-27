@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: 'Can I undo a submission?',
-    a: 'Yes — immediately after adding an entry an "Undo" button appears. Clicking it removes the entry before it enters the review queue. After 30 seconds the entry is locked in for review and can only be removed by the administrator. You can send an email to the us if you want to revert your submission after 30 seconds passed.',
+    a: 'Yes, immediately after adding an entry an "Undo" button appears. Clicking it removes the entry before it enters the review queue. After 30 seconds the entry is locked in for review and can only be removed by the administrator. You can send an email to the us if you want to revert your submission after 30 seconds passed.',
   },
   {
     q: 'What categories and subcategories are available?',
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: 'How do I write a good Q&A entry?',
-    a: 'Write the question as a user would ask it — short and specific. The answer should be direct and accurate, ideally 1–3 sentences. Avoid jargon where possible, and focus on one topic per entry. If something needs a long explanation, break it into multiple entries.',
+    a: 'Write the question as a user would ask it, try to be short and specific. The answer should be direct and accurate, ideally 1–3 sentences. Avoid jargon where possible, and focus on one topic per entry. If something needs a long explanation, break it into multiple entries.',
   },
   {
     q: 'Who can submit entries?',
