@@ -1,0 +1,13 @@
+# Only knowledgebases/, README.md, and qa.json are tracked
+
+# Webapp and all server code
+webapp/
+
+# Misc files
+LICENSE
+QA_submission.pdf
+pending-reviews.json
+sync_github.sh
+*.log
+*.pdf
+qa.json
